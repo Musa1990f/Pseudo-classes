@@ -56,12 +56,25 @@
     li:nth-child(even) {
         color: aquamarine;
     }
+    .like {
+        color: lightseagreen;
+        background-color: lightcoral;
+        font-size: 20px;
+        text-transform: uppercase;
+        /* background-origin: padding-box; */
+        border: none;
+    }
+    .like:hover {
+        color: bisque;
+        background-color: blueviolet;
+        cursor: pointer;
+    }
 
     </style>
 </head>
 <body>
     <header>
-        <h1>Testing Pseudo classes and links with CSS</h1>
+        <h1>Pseudo classes and links with CSS</h1>
     </header>
     <!-- navbar section -->
     <nav>
@@ -100,6 +113,7 @@
         <p>Find me on Twitter
             <a href="#">Twitter</a>
         </p>
+        <button class="like">Like 💕</button>
     </article>
 
 

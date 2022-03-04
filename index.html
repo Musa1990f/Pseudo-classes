@@ -74,8 +74,16 @@
         font-style: italic;
     }
     li:nth-child(even) {
-        color: aquamarine;
+        /* color: aquamarine; */
     }
+    /* centering a div */
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+
+    }
+
     .like {
         color: lightseagreen;
         background-color: lightcoral;
@@ -85,25 +93,34 @@
         border: none;
     }
     .like:hover {
-        color: bisque;
+        color: royalblue;
         background-color: blueviolet;
         cursor: pointer;
-    } .cat {
-        width: 20%;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        padding: 4px;
+    }
+     .cat {
+        /* width: 20%; */
         height: auto;
+        border-radius: 50px;
     }
     .twitter {
         display: block;
         margin-bottom: 10px;
     } 
     .aside {
-        border: 4px dotted palevioletred;
+        border: 4px solid teal;
         width: 40%;
+        margin-bottom: 20px;
+        /* list-style: none; */
     }
 
     </style>
 </head>
-<body>
+<body> 
+    <div class="container">
     <header>
         <h1>Pseudo classes and links with CSS</h1>
          <nav>
@@ -121,6 +138,7 @@
     <section>
         <heade class="testing">
             <img class="cat" src="./image/My image.jpeg" width="100">
+            <button class="like">Like 💕</button>
             <h2>Testing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis quos veniam ratione, fuga illo, molestiae incidunt aliquid vitae itaque ut quis.<br> Nesciunt cupiditate unde iste nihil esse minima, totam id.</p>
             <ol>
@@ -139,26 +157,37 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="./image/challenges.jpg" width="100" height="100">Cars</a></li>
+                        <img src="./image/challenges.jpg" width="100" height="100">Cars</a>
+                        <p>By Jack Hallows</p>
+                    </li>
                 <li>
                     <a href="#">
-                    <img src="./image/laura-jones.jpg" width="100" >Cargo</a></li>
+                    <img src="./image/laura-jones.jpg" width="100" >Cargo</a>
+                    <p>By John Bans</p>
+                </li>
                 <li>
                     <a href="#">
-                        <img src="./image/related-1.jpg" width="100">Carts</a></li>
+                        <img src="./image/related-1.jpg" width="100">Carts</a>
+                        <p>By John Smith</p>
+                    </li>
                 <li>
                     <a href="#">
-                        <img src="./image/related-2.jpg" width="100">Cartoon</a></li>
+                        <img src="./image/related-2.jpg" width="100">Cartoon</a>
+                        <p>By Jinx Luk</p>
+                    </li>
             </ul>
         </div>
         <p class="twitter">Find me on Twitter
             <a href="#">Twitter</a>
         </p>
-        <button class="like">Like 💕</button>
+        
     </article>
-
+    
 
     <!-- footer section -->
     <footer></footer>
+</div>
+
+
 </body>
 </html>

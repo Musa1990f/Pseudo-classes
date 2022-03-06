@@ -48,6 +48,8 @@
             margin-left: 40px;
         margin-bottom: 15px; 
       }
+
+      /* pseudo-classes */
       li:last-child {
           margin-bottom: 0;
       }
@@ -75,6 +77,15 @@
     }
     li:nth-child(even) {
         /* color: aquamarine; */
+    }
+
+    /* pseudo-elements */
+    h1::first-letter {
+        font-style: normal;
+        font-size: 25px;
+    }
+    p::first-line {
+        /* color: brown; */
     }
     /* centering a div */
     .container {

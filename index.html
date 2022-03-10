@@ -40,6 +40,8 @@
         }
         h3 {
             font-size: 20px;
+        }li {
+            list-style: none;
         }
          
             
@@ -87,6 +89,13 @@
     p::first-line {
         /* color: brown; */
     }
+
+    /* Adding flex */
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     /* centering a div */
     .container {
         width: 800px;
@@ -132,7 +141,7 @@
 </head>
 <body> 
     <div class="container">
-    <header>
+    <header class="main-header">
         <h1>Pseudo classes and links with CSS</h1>
          <nav>
         <a href="#">Blog</a>
